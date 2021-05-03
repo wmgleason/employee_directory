@@ -13,6 +13,7 @@
 
 - This app is deployed on Github pages here: 
  
+ <a href="https://wmgleason.github.io/employee_directory/" target="_blank">  https://wmgleason.github.io/employee_directory/   </a>
 
 # Dependencies
 ``` 

@@ -1,5 +1,5 @@
-# Budget-Tracker
-- budget_tracker, a Progressive Web Application (PWA),  enables the user to add expenses and deposits to their budget with or without an online connection enabling a more app-like feel. When entering transactions offline, data should populate the total when connected back online.
+# employee_directory
+- employee_directory allows the user to see initially a random selection of employees from the Random User API, to sort employees by name or age (by clicking on the category names), or to search names in the search box.
 
 ## Table of contents
 

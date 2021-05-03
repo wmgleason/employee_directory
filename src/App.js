@@ -18,7 +18,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <SiteHead />
+        <Wrapper />
         {this.state.employees.length > 0 && (
           <Navbar employees={this.state.employees} />
         )}

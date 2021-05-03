@@ -52,7 +52,7 @@ class Navbar extends React.Component {
           />
         </form>
         {this.state.filteredEmployees.length > 0 && (
-          <ListHeader empList={this.state.filteredEmployees} />
+          <Header empList={this.state.filteredEmployees} />
         )}
       </div>
     );

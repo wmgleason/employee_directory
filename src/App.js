@@ -1,41 +1,34 @@
-import React from "react";
-import Header from "./components/Header";
+import React from 'react';
+import './App.css';
 import axios from "axios";
+import SiteHead from './components/Header';
+import Navbar from './components/Navbar';
 
-export default class App extends React.Component {
+
+class App extends React.Component {
+
   state = {
-    users: [],
-    isLoading: false,
-    errorMsg: "",
+    employees: [],
   };
 
+//   if component mounts, do...
   componentDidMount() {
-    this.setState({ isLoading: true });
-    axios
-      .get("https://randomuser.me/api/?page=0&results=25")
-      .then((response) => {
-        this.setState({ users: response.data.results, errorMsg: "" });
-      })
-      .catch((error) =>
-        this.setState({
-          errorMsg: "Error while loading data. Try again later.",
-        })
-      )
-      .finally(() => {
-        this.setState({ isLoading: false });
-      });
+      axios.get(`https://randomuser.me/api/?results=25`)
+        .then(res => {
+          this.setState({ employees: res.data.results });
+        });
   }
 
-  render() {
-    const { users, isLoading, errorMsg } = this.state;
-    console.log(users);
 
+  render() {
     return (
-      <div className="main-section">
-        <Header />
-        {isLoading && <p className="loading">Loading...</p>}
-        {errorMsg && <p className="errorMsg">{errorMsg}</p>}
+      <div className="App">
+        <SiteHead />
+        {this.state.employees.length > 0 &&
+        <Navbar employees={this.state.employ
       </div>
     );
   }
 }
+
+export default App;

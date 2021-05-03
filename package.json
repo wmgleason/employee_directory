@@ -1,0 +1,22 @@
+{
+  "name": "employee_directory",
+  "version": "1.0.0",
+  "description": "employee directory using React and random user API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmgleason/employee_directory.git"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Wanda Gleason",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wmgleason/employee_directory/issues"
+  },
+  "homepage": "https://github.com/wmgleason/employee_directory#readme"
+}
